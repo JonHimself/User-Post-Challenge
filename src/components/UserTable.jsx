@@ -23,7 +23,6 @@ const UserTable = () => {
     const initialUserData = async () => {
         try {
             const { data } = await axios.get('https://jsonplaceholder.typicode.com/users')
-            console.log(data)
             setUserData(data)
         }catch(e) {
             console.log('Failed Response', e.message)
@@ -33,7 +32,6 @@ const UserTable = () => {
     const postData = async (userId) => {
         try {
             const { data } = await axios.get(`https://jsonplaceholder.typicode.com/users/${userId}/posts`)
-            console.log(data)
             setUserPostData(data)
             setLoading(false)
         }catch(e) {
@@ -58,10 +56,10 @@ const UserTable = () => {
           <TableRow>
             <TableCell />
             <TableCell>Username</TableCell>
-            <TableCell align="right">Full Name</TableCell>
-            <TableCell align="right">Website</TableCell>
-            <TableCell align="right">Email</TableCell>
-            <TableCell align="right">Phone</TableCell>
+            <TableCell align="left">Full Name</TableCell>
+            <TableCell align="left">Website</TableCell>
+            <TableCell align="left">Email</TableCell>
+            <TableCell align="left">Phone</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

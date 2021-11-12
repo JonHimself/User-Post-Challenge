@@ -25,8 +25,8 @@ const UserRow = (props) => {
           {post.userId}
         </TableCell>
         <TableCell>{post.id}</TableCell>
-        <TableCell align="right">{post.title}</TableCell>
-        <TableCell align="right">
+        <TableCell align="left">{post.title}</TableCell>
+        <TableCell align="left">
           {post.body}
         </TableCell>
       </TableRow>
@@ -47,10 +47,10 @@ const UserRow = (props) => {
         <TableCell component="th" scope="row">
           {row.username}
         </TableCell>
-        <TableCell align="right">{row.name}</TableCell>
-        <TableCell align="right">{row.website}</TableCell>
-        <TableCell align="right">{row.email}</TableCell>
-        <TableCell align="right">{row.phone}</TableCell>
+        <TableCell align="left">{row.name}</TableCell>
+        <TableCell align="left">{row.website}</TableCell>
+        <TableCell align="left">{row.email}</TableCell>
+        <TableCell align="left">{row.phone}</TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
@@ -64,8 +64,8 @@ const UserRow = (props) => {
                   <TableRow>
                     <TableCell>userId</TableCell>
                     <TableCell>PostId</TableCell>
-                    <TableCell align="right">Title</TableCell>
-                    <TableCell align="right">Body</TableCell>
+                    <TableCell align="left">Title</TableCell>
+                    <TableCell align="left">Body</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
